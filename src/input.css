@@ -14,12 +14,13 @@ body{
 }
 
 .shadow-effect {
-    background: linear-gradient(black, gray);
+    background-color: #1e1e1e;
+    /* background: linear-gradient(black, gray); */
     padding: 16px;
     border-radius: 20px;
    
-border:1px solid #ECECEC;
-box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.7);
+/* border:1px solid #ECECEC; */
+box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4);
 }
 #customers-testimonials .shadow-effect p {
     line-height: 1.5;
@@ -58,26 +59,169 @@ box-shadow: 0px 10px 15px rgba(255, 255, 255, 0.7);
 }
 
 
-
-
-/* 
-@keyframes infiniteScroll {
-    from {transform: translateX(0)}
-    to {transform: translateX(-50%)}
-  }
+.split {
  
-  .horizontal-scrolling-items {
-    display: flex;
-    font-size: 40px;
-    width: 2600px;
-    animation-name: infiniteScroll;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    margin: 0;
+    font-size: 5vw;
+    text-transform: uppercase;
   }
-  .horizontal-scrolling-items__item {
-    white-space: nowrap;
-  } */
+  
+  /* EFFECT SETUP */
+  
+  /* This part is relevant for the design. */
+  
+  .split {
+    color: #fff;
+  }
+  
+  .split::after,
+  .split::before {
+    content: " CALL GIRLS";
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+  }
+  
+  /* the lower half of the text */
+  .split::before {
+    height: 50%;
+    color: #232323;
+    -webkit-text-stroke: 2px #232323;
+  }
+  
+  .split::after {
+    transform: translateX(-0.625rem);
+    height: 49%; /* creates gap between text halves */
+    color: #fff;
+    transform: translateX(0);
+    animation: split 4s infinite ease-out;
+  }
+  
+  @keyframes split {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-1rem);
+    }
+  }
+  
+
+/* From Uiverse.io by gharsh11032000 */ 
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 8px 30px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: white;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button:hover::before {
+    scale: 3;
+  }
+  
+  .button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(255, 255, 255,0.4);
+  }
+  
+  .button:active {
+    scale: 1;
+  }
+  
+
+
+  .button1 {
+    cursor: pointer;
+    position: relative;
+    padding: 8px 30px;
+    font-size: 18px;
+    color: white;
+    border: 2px solid rgb(190, 24, 93);
+    border-radius: 10px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+  
+  .button1::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(190, 24, 93);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .button1:hover::before {
+    scale: 3;
+  }
+  
+  .button1:hover {
+    color: white;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(190, 24, 93);
+  }
+  
+  .button1:active {
+    scale: 1;
+  }
+  
+  
+
+
+  
+/* scrooll bar  */
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px transparent;
+	background-color: black;
+}
+
+::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: black;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #011318;
+  border-radius: 30px;
+  
+}
+
+
 
 
 
