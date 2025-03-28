@@ -116,7 +116,7 @@ box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4);
     padding: 8px 30px;
     font-size: 18px;
     color: white;
-    border: 2px solid rgb(190, 24, 93);
+    border: 2px solid white;
     border-radius: 10px;
     background-color: transparent;
     font-weight: 600;
@@ -134,7 +134,7 @@ box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4);
     border-radius: inherit;
     scale: 0;
     z-index: -1;
-    background-color: rgb(190, 24, 93);
+    background-color: white;     /* rgb(190, 24, 93) */
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
   }
   
@@ -143,9 +143,9 @@ box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4);
   }
   
   .button1:hover {
-    color: white;
+    color: black;
     scale: 1.1;
-    box-shadow: 0 0px 20px rgba(190, 24, 93);
+    box-shadow: 0 0px 20px white;
   }
   
   .button1:active {
@@ -171,7 +171,7 @@ box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.4);
 
 ::-webkit-scrollbar-thumb
 {
-	background-color: #011318;
+	background-color: white;
   border-radius: 30px;
   
 }
